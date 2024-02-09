@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="mumbai-indians2544.jpg">
+    <title>Mumbai Indians</title>
+    <style>
+               body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004f94;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 150px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member:hover {
+            background-color: #16a085; 
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 10px;
+            text-align: center;
+            
+        }
+
+        .team-member:hover .content,
+        .team-member:focus .content {
+            opacity: 1; 
+        }
+
+        h3, p {
+            margin: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .batsman {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .bowler {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content1 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .team-member:hover .content1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">
+    <img src="mumbai.jpg" style="float: left" width="100px" height="60px">
+    </a>
+    <header>
+        Mumbai Indian's Team
+    </header>
+    <h3>
+        <p>Mumbai Indians are a professional franchise cricket team based in Mumbai, Maharashtra, that competes in the
+            Indian Premier League. Founded in 2008, the team is owned by India's biggest conglomerate, Reliance
+            Industries</p>
+    </h3>
+    <div class="row">
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./mumbai/rohit.png" alt="player1">
+            <div class="content">
+                <h3>Rohit Sharma</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 203 </p>
+                    <p>Total Runs : 5314 </p>
+                    <p>Strike Rate : 129.75</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./mumbai/Suryakumar Yadav.png" alt="player2">
+            <div class="content">
+                <h3>Suryakumar Yadav</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 124</p>
+                    <p>Total Runs : 3249</p>
+                    <p>Strike Rate : 143.32</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./mumbai/Dewald Brevis.png" alt="player3">
+            <div class="content">
+                <h3>Dewald Brevis</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 7</p>
+                    <p>Total Runs : 161</p>
+                    <p>Strike Rate : 142.48</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./mumbai/Tim David.png" alt="player4">
+            <div class="content">
+                <h3>Tim David</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : </p>
+                    <p>Total Runs : </p>
+                    <p>Strike Rate : </p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./mumbai/Ishan Kishan WK Keeper-Batter.png" alt="player5">
+            <div class="content">
+                <h3>Ishan Kishan</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 25</p>
+                    <p>Total Runs : 418</p>
+                    <p>Strike Rate : 177.87</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./mumbai/N.Tilak Varma.png" alt="player6">
+            <div class="content">
+                <h3>N.Tilak Varma</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 25</p>
+                    <p>Total Runs : 740</p>
+                    <p>Strike Rate : 144.53</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="team-member bowler" tabindex="0">
+            <img src="./mumbai/Arjun Tendulkar all-rounder.png" alt="player7">
+            <div class="content">
+                <h3>Arjun Tendulkar</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 4</p>
+                    <p>Total Runs : 13</p>
+                    <p>Total Wickets: 3</p>
+                    <p>Strike Rate :144.44 </p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./mumbai/Nehal Wadhera-allrounder.png" alt="player8">
+            <div class="content">
+                <h3>Nehal Wadhera</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 14</p>
+                    <p>Total Runs : 241</p>
+                    <p>Strike Rate : 145.18</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./mumbai/Dewald Brevis.png" alt="player9">
+            <div class="content">
+                <h3>Dewald Brevis</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 7</p>
+                    <p>Total Wickets : 161</p>
+                    <p>Strike Rate : 129.77</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./mumbai/Piyush Chawla.png" alt="player10">
+            <div class="content">
+                <h3>Piyush Chawla</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 181</p>
+                    <p>Total Wickets : 179</p>
+                    <p>Strike Rate : 20.79</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./mumbai/Kumar Kartikeya Singh bowler.png" alt="player10">
+            <div class="content">
+                <h3>Kumar Kartikeya </h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 12</p>
+                    <p>Total Wickets : 10</p>
+                    <p>Strike Rate : 23.40</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./mumbai/Jason Behrendorff bowler.png" alt="player11">
+            <div class="content">
+                <h3>Jason Behrendorff</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 17</p>
+                    <p>Total Wickets : 19</p>
+                    <p>Strike Rate : 19.26</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

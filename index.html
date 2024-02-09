@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="ipl.jpg">
+    <title>IPL 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #92BAD5;
+            font-size: 1px;
+            height: 366px;
+            margin-top: -5px;
+        }
+
+        .trophy {
+            background: url('./banner.jpg') center/cover no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 1559px;
+            margin-left: -29px;
+        }
+
+        .main-container {
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: -15px;
+        }
+
+        .teams-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .team {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .team:hover {
+            transform: scale(1.05);
+        }
+
+        .team img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .team p {
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar ul {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #ffd700;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar a:hover::before,
+        .navbar a.active::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        #scroll-container {
+            overflow: hidden;
+            background-color: teal;
+            color: white;
+            font-family: helvetica;
+            text-transform: uppercase;
+        }
+
+        #scroll-text {
+            font-size: 2.5em;
+            font-weight: 100;
+            padding-left: 0.5em;
+
+
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+
+            -moz-animation: my-animation 15s linear infinite;
+            -webkit-animation: my-animation 15s linear infinite;
+            animation: my-animation 15s linear infinite;
+        }
+
+
+        @keyframes my-animation {
+            from {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+
+            to {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <img src="ipl.jpg" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="points.html">Point Table</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            </li>
+        </ul>
+    </nav>
+    <div id="scroll-container">
+        <div id="scroll-text">IPL Starting Soon IPL Starting Soon IPL Starting Soon<div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="header">
+            <h1>. </h1>
+            <div id="myimage" class="trophy"></div>
+        </div>
+        <div class="teams-container">
+            <div class="team">
+                <a href="chennai.html" style="color: black; text-decoration: none;">
+                    <img src="chennai-super-kings.jpg" alt="Chennai Super Kings">
+                    <p>Chennai Super Kings</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="delhi.html" style="color: black; text-decoration: none;">
+                    <img src="delhi-capitals.jpg" alt="Delhi Capitals">
+                    <p>Delhi Capitals</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="gujarat.html" style="color: black; text-decoration: none;">
+                    <img src="gujarat-titans.jpg" alt="Gujarat Titans">
+                    <p>Gujarat Titans</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="kolkata.html" style="color: black; text-decoration: none;">
+                    <img src="kolkata-knight-riders6292.jpg" alt="Kolkata Knight Riders">
+                    <p>Kolkata Knight Riders</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="Lucknow.html" style="color: black; text-decoration: none;">
+                    <img src="lucknow-super-giants3550.logowik.com.webp" alt="Lucknow Super Giants">
+                    <p>Lucknow Super Giants</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="teams-container">
+            <div class="team">
+                <a href="Mumbai-Indians.html" style="color: black; text-decoration: none;">
+                    <img src="mumbai.jpg" alt="Mumbai Indians">
+                    <p>Mumbai Indians</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="Punjab-Kings.html" style="color: black; text-decoration: none;">
+                    <img src="punjsb.webp" alt="Punjab Kings">
+                    <p>Punjab Kings</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="Royals.html" style="color: black; text-decoration: none;">
+                    <img src="Rajasthan_Royals_Logo.svg (1).png" alt="Rajasthan Royals">
+                    <p>Rajasthan Royals</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="rcb.html" style="color: black; text-decoration: none;">
+                    <img src="Royal_Challengers_Bangalore_2020.svg.png" alt="Royal Challengers Bangalore"
+                        style="margin-left: 20px;">
+                    <p>Royal Challengers Bangalore</p>
+                </a>
+            </div>
+            <div class="team">
+                <a href="hyderbad.html" style="color: black; text-decoration: none;">
+                    <img src="sunrisers-hyderabad5129.jpg" alt="Sunrisers Hyderabad">
+                    <p>Sunrisers Hyderabad</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+</body>
+<script>
+    $(document).ready(function () {
+        $(".trophy").on("click", function (event) {
+            var target = $(this).data("target");
+            var x = event.pageX - $(this).offset().left;
+            var y = event.pageY - $(this).offset().top;
+
+            manageRedirect(x, y);
+            console.log("Clicked on " + target + " at coordinates (x: " + x + ", y: " + y + ")");
+        });
+    });
+    function manageRedirect(x, y) {
+        var routeMap = [
+            {
+                minX: 68,
+                maxX: 135,
+                minY: 275,
+                maxY: 375,
+                route: "./kolkata.html"
+            },
+            {
+                minX: 133,
+                maxX: 170,
+                minY: 152,
+                maxY: 234,
+                route: "./rcb.html"
+            },
+            {
+                minX: 270,
+                maxX: 321,
+                minY: 95,
+                maxY: 161,
+                route: "./gujarat.html"
+            },
+            {
+                minX: 375,
+                maxX: 435,
+                minY: 40,
+                maxY: 141,
+                route: "./hyderbad.html"
+            },
+            {
+                minX: 460,
+                maxX: 582,
+                minY: 27,
+                maxY: 123,
+                route: "./chennai.html"
+            },
+            {
+                minX: 809,
+                maxX: 927,
+                minY: 43,
+                maxY: 120,
+                route: "./Mumbai-Indians.html"
+            },
+            {
+                minX: 958,
+                maxX: 1021,
+                minY: 63,
+                maxY: 158,
+                route: "./delhi.html"
+            },
+            {
+                minX: 1058,
+                maxX: 1129,
+                minY: 119,
+                maxY: 189,
+                route: "./Royals.html"
+            },
+            {
+                minX: 1163,
+                maxX: 1246,
+                minY: 157,
+                maxY: 242,
+                route: "./Punjab-Kings.html"
+            },
+            {
+                minX: 1170,
+                maxX: 1329,
+                minY: 264,
+                maxY: 337,
+                route: "./Lucknow.html"
+            },
+            {
+                minX: 621,
+                maxX: 760,
+                minY: 47,
+                maxY: 360,
+                route: "./win.html"
+            }
+        ];
+        routeMap.forEach(rm => {
+            if (x >= rm.minX && x <= rm.maxX && y >= rm.minY && y <= rm.maxY) {
+                window.location.href = rm.route;
+            }
+
+        });
+
+
+
+    }
+</script>
+
+</html>

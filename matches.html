@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="IPL-PNG-Logo.webp">
+    <title>Matches - IPL 2024</title>
+    <style>
+
+        .team-logo {
+            width: 30px;
+            height: auto;
+        }
+        
+        .matches-table {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar ul {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #ffd700;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar a:hover::before,
+        .navbar a.active::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <img src="ipl.jpg" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="points.html">Point Table</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <div class="main-container">
+        <h1>Matches Schedule</h1>
+
+        <div class="matches-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Match Centre</th>
+                        <th>Time (IST)</th>
+                        <th>Logo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>22 Mar 2024</td>
+                        <td>GT vs RR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="gujarat-titans.jpg" alt="GT Logo" class="team-logo"> vs <img src="./rajisthan.jpg" alt="RR Logo" class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>23 Mar 2024</td>
+                        <td>DC vs MI</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./delhi-capitals.jpg"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>24 Mar 2024</td>
+                        <td>PBKS vs RCB</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./punjsb.webp"  class="team-logo"> vs <img src="./rcb.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>25  Mar 2024</td>
+                        <td>CSK vs LSG</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./chennai-super-kings.jpg"  class="team-logo"> vs <img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>26 Mar 2024</td>
+                        <td>SRH vs KKR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"> vs <img src="./kolkata-knight-riders6292.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>27 Mar 2024</td>
+                        <td>RCB vs KKR</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./Royal_Challengers_Bangalore_2020.svg.png"  class="team-logo"> vs <img src="./kolkata-knight-riders6292.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>28 Mar 2024</td>
+                        <td>LSG vs CSK</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"> vs <img src="./chennai-super-kings.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>29 Mar 2024</td>
+                        <td>KKR vs PBKS</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./kolkata-knight-riders6292.jpg"  class="team-logo"> vs <img src="./punjsb.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>30 Mar 2024</td>
+                        <td>MI vs RR</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./mumbai.jpg"  class="team-logo"> vs <img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>30 Mar 2024</td>
+                        <td>GT vs DC</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./gujarat-titans.jpg"  class="team-logo"> vs <img src="./delhi-capitals.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>01 April 2024</td>
+                        <td>CSK vs PBKS</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./chennai-super-kings.jpg"  class="team-logo"> vs <img src="./punjsb.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>02 April 2024</td>
+                        <td>SRH vs LSG</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"> vs <img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>03 April 2024</td>
+                        <td>RR vs RCB</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"> vs <img src="./rcb.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>04 April 2024</td>
+                        <td>KKR vs MI</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./kolkata-knight-riders6292.jpg"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>05 April 2024</td>
+                        <td>LSG vs DC</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"> vs <img src="./delhi-capitals.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>06 April 2024</td>
+                        <td>PBKS vs GY</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./punjsb.webp"  class="team-logo"> vs <img src="./gujarat-titans.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>07 April 2024</td>
+                        <td>CSK vs SRH</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./chennai-super-kings.jpg"  class="team-logo"> vs <img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>08 April 2024</td>
+                        <td>RCB vs MI</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./rcb.jpg"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>09 April 2024</td>
+                        <td>KKR vs DC</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./kolkata-knight-riders6292.jpg"  class="team-logo"> vs <img src="./delhi-capitals.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>09 April 2024</td>
+                        <td>RR vs LSG</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"> vs <img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>10 April 2024</td>
+                        <td>SRH vs GT</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"> vs <img src="./gujarat-titans.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>11 April 2024</td>
+                        <td>CSK vs RCB</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./chennai-super-kings.jpg"  class="team-logo"> vs <img src="./rcb.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>12 April 2024</td>
+                        <td>MI vs PBKS</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./mumbai.jpg"  class="team-logo"> vs <img src="./punjsb.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>13 April 2024</td>
+                        <td>RR vs GT</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"> vs <img src="./gujarat-titans.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>14 April 2024</td>
+                        <td>SRH vs KKR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"> vs <img src="./kolkata-knight-riders6292.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>15 April 2024</td>
+                        <td>MI vs LSG</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./mumbai.jpg"  class="team-logo"> vs <img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>15 April 2024</td>
+                        <td>DC vs RCB</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./delhi-capitals.jpg"  class="team-logo"> vs <img src="./rcb.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>16 April 2024</td>
+                        <td>PBKS vs SRH</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./punjsb.webp"  class="team-logo"> vs <img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>17 April 2024</td>
+                        <td>GT vs CSK</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./gujarat-titans.jpg"  class="team-logo"> vs <img src="./chennai-super-kings.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>18 April 2024</td>
+                        <td>RR vs KKR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"> vs <img src="./kolkata-knight-riders6292.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>19 April 2024</td>
+                        <td>LSG vs RCB</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"> vs <img src="./rcb.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>20 April 2024</td>
+                        <td>DC vs PBKS</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./delhi-capitals.jpg"  class="team-logo"> vs <img src="./punjsb.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>21 April 2024</td>
+                        <td>MI vs CSK</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./mumbai.jpg"  class="team-logo"> vs <img src="./chennai-super-kings.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>22 April 2024</td>
+                        <td>DC vs RR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./delhi-capitals.jpg"  class="team-logo"> vs <img src="./rcb.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>23 April 2024</td>
+                        <td>KKR vs GJ</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./kolkata-knight-riders6292.jpg"  class="team-logo"> vs <img src="./gujarat-titans.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>24 April 2024</td>
+                        <td>RCB vs SRH</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./rcb.jpg"  class="team-logo"> vs <img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>25 April 2024</td>
+                        <td>LSG vs MI</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>26 April 2024</td>
+                        <td>PBKS vs CSK</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./punjsb.webp"  class="team-logo"> vs <img src="./chennai-super-kings.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>27 April 2024</td>
+                        <td>RCB vs RR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./rcb.jpg"  class="team-logo"> vs <img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>28 April 2024</td>
+                        <td>GT vs RR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./gujarat-titans.jpg"  class="team-logo"> vs <img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>29 April 2024</td>
+                        <td>GT vs SRH</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./gujarat-titans.jpg"  class="team-logo"> vs <img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>30 April 2024</td>
+                        <td>PBKS vs LSG</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./punjsb.webp"  class="team-logo"> vs <img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>01 May 2024</td>
+                        <td>GT vs RCB</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./gujarat-titans.jpg"  class="team-logo"> vs <img src="./rcb.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>02 May 2024</td>
+                        <td>RR vs MI</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>03 May 2024</td>
+                        <td>DC vs LSG</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./delhi-capitals.jpg"  class="team-logo"> vs <img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>04 May 2024</td>
+                        <td>SRH vs CSK</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"> vs <img src="./chennai-super-kings.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>05 May 2024</td>
+                        <td>KKR vs RR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./kolkata-knight-riders6292.jpg"  class="team-logo"> vs <img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>06 May 2024</td>
+                        <td>GT vs PBKS</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./rcb.jpg"  class="team-logo"> vs <img src="./punjsb.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>07 May 2024</td>
+                        <td>RCB vs CSK</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./rcb.jpg"  class="team-logo"> vs <img src="./chennai-super-kings.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>08 May 2024</td>
+                        <td>DC vs SRH</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./delhi-capitals.jpg"  class="team-logo"> vs <img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>09 May 2024</td>
+                        <td>GT vs MI</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./gujarat-titans.jpg"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>10 May 2024</td>
+                        <td>PBKS vs RR</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./punjsb.webp"  class="team-logo"> vs <img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>11 May 2024</td>
+                        <td>LSG vs KKR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"> vs <img src="./kolkata-knight-riders6292.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>12 May 2024</td>
+                        <td>SRH vs RCB</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>13 May 2024</td>
+                        <td>CSK vs DC</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./chennai-super-kings.jpg"  class="team-logo"> vs <img src="./delhi-capitals.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>14 May 2024</td>
+                        <td>MI vs KKR</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./mumbai.jpg"  class="team-logo"> vs <img src="./kolkata-knight-riders6292.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>15 May 2024</td>
+                        <td>LSG vs GT</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"> vs <img src="./gujarat-titans.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>16 May 2024</td>
+                        <td>RR vs DC</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"> vs <img src="./delhi-capitals.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>18 May 2024</td>
+                        <td>CSK vs MI</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./chennai-super-kings.jpg"  class="team-logo"> vs <img src="./mumbai.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>19 May 2024</td>
+                        <td>RCB vs PBKS</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./rcb.jpg"  class="team-logo"> vs <img src="./punjsb.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>20 May 2024</td>
+                        <td>KKR vs SRH</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./kolkata-knight-riders6292.jpg"  class="team-logo"> vs <img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>21 May 2024</td>
+                        <td>LSG vs RR</td>
+                        <td>3:30 PM</td>
+                        <td><img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"> vs <img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>22 May 2024</td>
+                        <td>PBKS vs DC</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./punjsb.webp"  class="team-logo"> vs <img src="./delhi-capitals.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>23 May 2024</td>
+                        <td>MI vs SRH</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./mumbai.jpg"  class="team-logo"> vs <img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>24 May 2024</td>
+                        <td>KKR vs LSG</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./kolkata-knight-riders6292.jpg"  class="team-logo"> vs <img src="./lucknow-super-giants3550.logowik.com.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>25 May 2024</td>
+                        <td>RCB vs GT</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./rcb.jpg"  class="team-logo"> vs <img src="./gujarat-titans.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>26 May 2024</td>
+                        <td>RR vs CSK</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./Rajasthan_Royals_Logo.svg (1).png"  class="team-logo"> vs <img src="./chennai-super-kings.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>27 May 2024</td>
+                        <td>MI vs DC</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./mumbai.jpg"  class="team-logo"> vs <img src="./delhi-capitals.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>28 May 2024</td>
+                        <td>SRH vs PBKS</td>
+                        <td>7:30 PM</td>
+                        <td><img src="./sunrisers-hyderabad5129.jpg"  class="team-logo"> vs <img src="./punjsb.webp"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>29 May 2024</td>
+                        <td> QUALIFIER-1 </td>
+                        <td>7:30 PM</td>
+                        <td><img src="./ipl.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>30 May 2024</td>
+                        <td> ELIMINATOR </td>
+                        <td>7:30 PM</td>
+                        <td><img src="./ipl.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>1 June 2024</td>
+                        <td> QUALIFIER-2 </td>
+                        <td>7:30 PM</td>
+                        <td><img src="./ipl.jpg"  class="team-logo"></td>
+                    </tr>
+                    <tr>
+                        <td>4 June 2024</td>
+                        <td> FINAL </td>
+                        <td>7:30 PM</td>
+                        <td><img src="./ipl.jpg"  class="team-logo"></td>
+                    </tr>
+
+
+                
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

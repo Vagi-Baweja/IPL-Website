@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="chennai-super-kings.jpg">
+    <title>Chennai Super Kings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 150px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member:hover {
+            background-color: #16a085;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .team-member:hover .content,
+        .team-member:focus .content {
+            opacity: 1;
+        }
+
+        h3,
+        p {
+            margin: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .batsman {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .bowler {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .content1 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .team-member:hover .content1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">
+        <img src="chennai-super-kings.jpg" style="float: left" width="100px" height="60px">
+    </a>
+    <header>
+        Chennai Super Kings
+    </header>
+    <h3>
+        <p>Chennai Super Kings is a professional cricket franchise based in Chennai, Tamil Nadu, India, that competes in
+            the Indian Premier League. Founded in 2008, the team plays its home matches at the M. A. Chidambaram Stadium
+            in Chennai.</p>
+    </h3>
+    <div class="row">
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./chennai/MS Dhoni.png" alt="player1">
+            <div class="content">
+                <h3>MS Dhoni</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 250</p>
+                    <p>Total Runs: 5082</p>
+                    <p>Strike Rate : 135.92</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./chennai/Devon Conway.png" alt="player2">
+            <div class="content">
+                <h3>Devon Conway</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 23</p>
+                    <p>Total Runs: 924</p>
+                    <p>Strike Rate : 141.28</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./chennai/Nishant Sindhu.png" alt="player3">
+            <div class="content">
+                <h3>Nishant Sindhu</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : </p>
+                    <p>Total Runs: </p>
+                    <p>Strike Rate : </p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./chennai/Ajinkya Rahane.png" alt="player4">
+            <div class="content">
+                <h3>Ajinkya Rahane</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 172</p>
+                    <p>Total Runs: 4400</p>
+                    <p>Strike Rate : 123.42</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./chennai/Shaik Rasheed.png" alt="player5">
+            <div class="content">
+                <h3>Shaik Rasheed</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : </p>
+                    <p>Total Runs: </p>
+                    <p>Strike Rate : </p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./chennai/Ruturaj Gaikwad.png" alt="player6">
+            <div class="content">
+                <h3>Ruturaj Gaikwad</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 52</p>
+                    <p>Total Runs: 1797</p>
+                    <p>Strike Rate : 135.52</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="team-member bowler" tabindex="0">
+            <img src="./chennai/Ravindra Jadeja.png" alt="player7">
+            <div class="content">
+                <h3>Ravindra Jadeja</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 226</p>
+                    <p>Total Runs: 2692</p>
+                    <p>Strike Rate : 128.56</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./chennai/Mitchell Santner.png" alt="player8">
+            <div class="content">
+                <h3>Mitchell Santner</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 15</p>
+                    <p>Total Runs: 56</p>
+                    <p>Strike Rate : 103.70</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./chennai/Moeen Ali.png" alt="player9">
+            <div class="content">
+                <h3>Moeen Ali</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 59</p>
+                    <p>Total Wickets: 33</p>
+                    <p>Strike Rate : 6.95</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./chennai/Deepak Chahar.png" alt="player10">
+            <div class="content">
+                <h3>Deepak Chahar</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 73</p>
+                    <p>Total Wickets: 72</p>
+                    <p>Strike Rate : 7.93</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./chennai/Mukesh Choudhary.png" alt="player10">
+            <div class="content">
+                <h3>Mukesh Choudhary</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 13</p>
+                    <p>Total Wickets: 16</p>
+                    <p>Strike Rate : 9.32</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./chennai/Prashant Solanki.png" alt="player11">
+            <div class="content">
+                <h3>Prashant Solanki</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 2</p>
+                    <p>Total Wickets: 2</p>
+                    <p>Strike Rate : 6.33</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

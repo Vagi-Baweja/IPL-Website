@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="Royal_Challengers_Bangalore_2020.svg.png">
+    <title>Royal Challengers Bangalore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightcoral;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 150px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member:hover {
+            background-color: #16a085;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .team-member:hover .content,
+        .team-member:focus .content {
+            opacity: 1;
+        }
+
+        h3,
+        p {
+            margin: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .batsman {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .bowler {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content1 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .team-member:hover .content1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">
+    <img src="Royal_Challengers_Bangalore_2020.svg.png" style="float: left" width="100px" height="50px">
+    </a>
+    <header>
+        Royal Challengers Bangalore
+    </header>
+    <h3>
+        <p>Royal Challengers Bangalore are a professional franchise cricket team based in Bengaluru, Karnataka, that
+            plays in the Indian Premier League. It was founded in 2008 by United Spirits and named after the company's
+            liquor brand Royal Challenge.</p>
+    </h3>
+    <div class="row">
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rcb/Virat Kohli bat.png" alt="player1">
+            <div class="content">
+                <h3>Virat Kohli</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 237</p>
+                    <p>Total Runs: 7263</p>
+                    <p>Strike Rate : 130.02</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rcb/Faf Du Plessis bat.png" alt="player2">
+            <div class="content">
+                <h3>Faf dU Plessis</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 130</p>
+                    <p>Total Runs: 4133</p>
+                    <p>Strike Rate : 134.14</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rcb/Manoj Bhandage bat.png" alt="player3">
+            <div class="content">
+                <h3>Manoj Bhandage</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : </p>
+                    <p>Total Runs: </p>
+                    <p>Strike Rate : </p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rcb/Dinesh Karthik bat.png" alt="player4">
+            <div class="content">
+                <h3>Dinesh Karthik</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 242</p>
+                    <p>Total Runs: 4516</p>
+                    <p>Strike Rate : 132.71</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rcb/Anuj Rawat bat.png" alt="player5">
+            <div class="content">
+                <h3>Anuj Rawat</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 19</p>
+                    <p>Total Runs: 220</p>
+                    <p>Strike Rate : 115.79</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rcb/Suyash S Prabhudessai bat.png" alt="player6">
+            <div class="content">
+                <h3>Suyash S Prabhudessai</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 10</p>
+                    <p>Total Runs: 102</p>
+                    <p>Strike Rate : 115.91</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rcb/Glenn Maxwell all.png" alt="player7">
+            <div class="content">
+                <h3>Glenn Maxwell</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 124</p>
+                    <p>Total Runs: 2719</p>
+                    <p>Strike Rate : 157.62</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rcb/Mahipal Lomror all.png" alt="player8">
+            <div class="content">
+                <h3>Mahipal Lomror</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 30</p>
+                    <p>Total Runs: 402</p>
+                    <p>Strike Rate : 131.80</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rcb/Mohammed Siraj bowl.png" alt="player9">
+            <div class="content">
+                <h3>Mohammed Siraj</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 79</p>
+                    <p>Total Wickets: 78</p>
+                    <p>Strike Rate : .45</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rcb/Akash Deep bowl.png" alt="player10">
+            <div class="content">
+                <h3>Akash Deep</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 7</p>
+                    <p>Total Wickets: 6</p>
+                    <p>Strike Rate : 28.54</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rcb/Reece Topley bowl.png" alt="player10">
+            <div class="content">
+                <h3>Reece Topely</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 1</p>
+                    <p>Total Wickets: 1</p>
+                    <p>Strike Rate : 12.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rcb/Himanshu Sharma bowl.png" alt="player11">
+            <div class="content">
+                <h3>Himanshu Sharma</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 1</p>
+                    <p>Total Wickets: 0</p>
+                    <p>Strike Rate : 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

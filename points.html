@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="IPL-PNG-Logo.webp">
+    <title>Point Table - IPL 2024</title>
+    <style>
+        .team-logo {
+            width: 30px;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .points-table {
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar ul {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #ffd700;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar a:hover::before,
+        .navbar a.active::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <img src="ipl.jpg" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="venue.html">Venue</a></li>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <div class="main-container">
+        <h1>Point Table</h1>
+
+        <div class="points-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Team Name</th>
+                        <th>Matches</th>
+                        <th>Win</th>
+                        <th>Loss</th>
+                        <th>NRR</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="chennai-super-kings.jpg" alt="CSK Logo" class="team-logo"></td>
+                        <td>Chennai Super Kings</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="mumbai.jpg" alt="MI Logo" class="team-logo"></td>
+                        <td>Mumbai Indians</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="gujarat-titans.jpg" alt="MI Logo" class="team-logo"></td>
+                        <td>Gujarat Titans</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="lucknow-super-giants3550.logowik.com.webp" alt="MI Logo" class="team-logo"></td>
+                        <td>Lucknow Super Giants</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="kolkata-knight-riders6292.jpg" alt="MI Logo" class="team-logo"></td>
+                        <td>Kolkata Knight Riders</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="rcb.jpg" alt="MI Logo" class="team-logo"></td>
+                        <td>Royal Challengers Bangalore</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="delhi-capitals.jpg" alt="MI Logo" class="team-logo"></td>
+                        <td>Delhi Capitals</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="punjsb.webp" alt="MI Logo" class="team-logo"></td>
+                        <td>Punjab Kings</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Rajasthan_Royals_Logo.svg (1).png" alt="MI Logo" class="team-logo"></td>
+                        <td>Rajasthan Royals</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./sunrisers-hyderabad5129.jpg" alt="MI Logo" class="team-logo"></td>
+                        <td>Sunrisers Hyderabad</td>
+                        <td>14</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

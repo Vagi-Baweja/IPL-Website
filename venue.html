@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="IPL-PNG-Logo.webp">
+    <title>Venues - IPL 2024</title>
+    <style>
+        .venue-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .venue {
+            position: relative;
+            width: 23%;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .venue img {
+            width: 100%;
+            height: 220px;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .venue:hover img {
+            transform: scale(1.1);
+        }
+
+        .venue-name {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .venue-details {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            overflow: hidden;
+            text-align: center;
+            transition: height 0.8s ease-in-out;
+
+        }
+
+        .venue:hover .venue-details {
+            display: block;
+            height: 100%;
+        }
+
+        .venue-details p {
+            margin: 0;
+            padding: 20px;
+            animation: slideIn 3s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar ul {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #ffd700;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar a:hover::before,
+        .navbar a.active::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <img src="ipl.jpg" alt="Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="points.html">Point Table</a></li>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="main-container">
+        <h1>Match Venues and Ground</h1>
+
+        <div class="venue-container">
+            <div class="venue">
+                <img src="narendra modi stadium.jpg" alt="Venue 1">
+                <p class="venue-name">Narendra Modi Stadium</p>
+                <div class="venue-details">
+                    <p>The Narendra Modi Stadium (NMS), also known as Motera Stadium, is an international cricket
+                        stadium in Ahmedabad, Gujarat, India. It is the largest stadium in the world, with a seating
+                        capacity of 132,000 spectators.</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="eden-garden-small-new.jpg" alt="Venue 2">
+                <p class="venue-name">Eden Garden</p>
+                <div class="venue-details">
+                    <p>Eden Gardens is an international cricket stadium in Kolkata, India. Established in 1864, it is
+                        the oldest and second-largest cricket stadium in India and third-largest in the world.
+                        The stadium currently has a capacity of 68,000. It is the home ground of the Kolkata Knight
+                        Riders. </p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="Rajiv Gandhi Stadium 04172023.png" alt="Venue 3">
+                <p class="venue-name">Rajiv Gandhi International Stadium</p>
+                <div class="venue-details">
+                    <p>The Rajiv Gandhi International Cricket Stadium, commonly known as Uppal Stadium, is an
+                        international cricket stadium in Hyderabad, Telangana, India. It is owned and operated by
+                        Hyderabad Cricket Association (HCA). It is the home ground of Hyderabad cricket team and
+                        Hyderabad women's cricket team.</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="Wankhede Stadium.jpg" alt="Venue 4">
+                <p class="venue-name">Wankhede Stadium</p>
+                <div class="venue-details">
+                    <p>Wankhede Stadium is an international cricket stadium in Mumbai, India. It is owned and operated
+                        by Mumbai Cricket Association and is the home ground of the Mumbai Indians. It houses the
+                        headquarters of MCA, the Board of Control for Cricket in India, and the Indian Premier League.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="venue-container">
+            <div class="venue">
+                <img src="chinnaswamystadium_1.webp" alt="Venue 1">
+                <p class="venue-name">M.Chinnaswamy Stadium</p>
+                <div class="venue-details">
+                    <p>The M. Chinnaswamy Stadium is a cricket stadium in Bangalore, Karnataka, India. It is owned by
+                        Government of Karnataka and operated by Karnataka State Cricket Association</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="Arun-Jaitley-Stadium-1.jpg" alt="Venue 2">
+                <p class="venue-name">Arun Jaitlet Stadium</p>
+                <div class="venue-details">
+                    <p>The Arun Jaitley Stadium is a cricket stadium owned and operated by the Delhi & District Cricket
+                        Association and located on Bahadur Shah Zafar Marg, New Delhi. It was established in 1883 as the
+                        Feroz Shah Kotla Stadium, and named after the nearby Kotla fort</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="M.A-Chidambaram-Stadium-Pitch-Report.jpg" alt="Venue 3">
+                <p class="venue-name">M.A.Chidambaram Stadium</p>
+                <div class="venue-details">
+                    <p>M. A. Chidambaram Stadium, commonly known as the Chepauk Stadium, is a cricket stadium in
+                        Chennai, Tamil Nadu, India. Established in 1916, it is the second oldest cricket stadium in the
+                        country after Eden Gardens in Kolkata.</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="Dharamsala-Cricket-Stadium.jpg" alt="Venue 4">
+                <p class="venue-name">Himachal Pradesh Cricket Association Stadium</p>
+                <div class="venue-details">
+                    <p>Himachal Pradesh Cricket Association Stadium is an international cricket stadium in Dharamshala
+                        hill station of Himachal Pradesh, India.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="venue-container">
+            <div class="venue">
+                <img src="./O7zj0bh9uq.webp" alt="Venue 1">
+                <p class="venue-name">Inderjit Singh Bindra</p>
+                <div class="venue-details">
+                    <p>The Inderjit Singh Bindra Stadium is a cricket ground located in Mohali, Punjab, India. It is
+                        popularly referred to as the Mohali Stadium. The stadium was built by Geetanshu Kalra is home to
+                        the Punjab team.</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="Lucknow-s-Ekana-Stadium-will-house-Lucknow-Super-G_1695302951114_1695302961000.avif"
+                    alt="Venue 2">
+                <p class="venue-name">Ekana Stadium</p>
+                <div class="venue-details">
+                    <p>Ekana International Cricket Stadium also known as Bharat Ratna Shri Atal Bihari Vajpayee Ekana
+                        Cricket Stadium is an international cricket stadium in Lucknow, India. The arena has a seating
+                        capacity of 50,000 and is the fifth largest international cricket stadium of India.</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="sawai-mansingh-stadium.jpg" alt="Venue 3">
+                <p class="venue-name">Sawai Mansingh Stadium</p>
+                <div class="venue-details">
+                    <p>Sawai Mansingh Indoor Stadium is an indoor stadium located in Jaipur, Rajasthan. Facilities
+                        include player change rooms and lounge, control and medical rooms, media centre,
+                        state-of-the-art-acoustics and parking facilities</p>
+                </div>
+            </div>
+
+            <div class="venue">
+                <img src="LightsMohali.png" alt="Venue 4">
+                <p class="venue-name">ACA Stadium</p>
+                <div class="venue-details">
+                    <p>Assam Cricket Association Stadium is a cricket stadium in Barsapara, Guwahati, Assam, India.
+                        It is the home ground of the Assam cricket team and is owned and operated by the Assam Cricket
+                        Association.
+                        The stadium has a maximum capacity of 37,800 spectators</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

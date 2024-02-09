@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="Rajasthan_Royals_Logo.svg (1).png">
+    <title>Rajasthan Royals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: lightskyblue;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 150px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member:hover {
+            background-color: #16a085;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .team-member:hover .content,
+        .team-member:focus .content {
+            opacity: 1;
+        }
+
+        h3,
+        p {
+            margin: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .batsman {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .bowler {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content1 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .team-member:hover .content1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">
+    <img src="Rajasthan_Royals_Logo.svg (1).png" style="float: left" width="100px" height="60px">
+    </a>
+    <header>
+        Rajasthan Royals
+    </header>
+    <h3>
+        <p>Rajasthan Royals are a professional franchise cricket team based in Jaipur, Rajasthan, that plays in the
+            Indian Premier League. Founded in 2008 as one of the initial eight IPL franchises, the team is based at the
+            Sawai Mansingh Stadium in Jaipur. The Royals are known to unearth obscure, high potential talent.</p>
+    </h3>
+    <div class="row">
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rajesthan/Sanju Samson bat.png" alt="player1">
+            <div class="content">
+                <h3>Sanju Samson</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 152</p>
+                    <p>Total Runs: 3888</p>
+                    <p>Strike Rate : 137.19</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rajesthan/Yashasvi Jasiwal bat.png" alt="player2">
+            <div class="content">
+                <h3>Yashasvi Jasiwal</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 37</p>
+                    <p>Total Runs: 1172</p>
+                    <p>Strike Rate : 148.73</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rajesthan/Shimron Hetmyer bat.png" alt="player3">
+            <div class="content">
+                <h3>Shimron Hetmyer</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 60</p>
+                    <p>Total Runs: 1131</p>
+                    <p>Strike Rate : 152.22</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rajesthan/Jos Buttler bat.png" alt="player4">
+            <div class="content">
+                <h3>Jos Buttler</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 96</p>
+                    <p>Total Runs: 3223</p>
+                    <p>Strike Rate : 148.32</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rajesthan/Dhruv Jurel Bat.png" alt="player5">
+            <div class="content">
+                <h3>Dhruv Jurel</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 13</p>
+                    <p>Total Runs: 152</p>
+                    <p>Strike Rate : 172.73</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./rajesthan/Riyan Parag bat.png" alt="player6">
+            <div class="content">
+                <h3>Riyan Parag</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 54</p>
+                    <p>Total Runs: 600</p>
+                    <p>Strike Rate : 123.97</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rajesthan/Ravichandra Ashwin all.png" alt="player7">
+            <div class="content">
+                <h3>Ravichandra Ashwin</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 197</p>
+                    <p>Total Runs: 714</p>
+                    <p>Total Wickets: 171</p>
+                    <p>Strike Rate : 118.80</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rajesthan/Donovan Ferreria all.png" alt="player8">
+            <div class="content">
+                <h3>Donovan Ferreria</h3>
+                <p>All-Rounder</p>
+            </div>
+            <div class="content1">
+                <p>Innings : </p>
+                <p>Total Runs: </p>
+                <p>Strike Rate : </p>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rajesthan/Yuzvendra Chahal bowl.png" alt="player9">
+            <div class="content">
+                <h3>Yuzvendra Chahal</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 145</p>
+                    <p>Total Wickets: 4056</p>
+                    <p>Strike Rate : 7.67</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rajesthan/Trent Boult bowl.png" alt="player10">
+            <div class="content">
+                <h3>Treant Boult</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 88</p>
+                    <p>Total Wickets: 105</p>
+                    <p>Strike Rate : 8.29</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rajesthan/Sandeep Sharma bowl.png" alt="player10">
+            <div class="content">
+                <h3>Sandeep Sharam</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 116</p>
+                    <p>Total Wickets: 124</p>
+                    <p>Strike Rate : 7.86</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./rajesthan/Kuldeep Sain bowl.png" alt="player11">
+            <div class="content">
+                <h3>Kuldeep Sen</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 9</p>
+                    <p>Total Wickets: 265</p>
+                    <p>Strike Rate : 9.41</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

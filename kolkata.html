@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="kolkata-knight-riders6292.jpg">
+    <title>Kolkata Knight Riders</title>
+    <style>
+               body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004f94;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 150px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member:hover {
+            background-color: #16a085; 
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 10px;
+            text-align: center;
+            
+        }
+
+        .team-member:hover .content,
+        .team-member:focus .content {
+            opacity: 1; 
+        }
+
+        h3, p {
+            margin: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .batsman {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .bowler {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content1 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .team-member:hover .content1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">
+    <img src="kolkata-knight-riders6292.jpg" style="float: left" width="100px" height="60px">
+    </a>
+    <header>
+        Kolkata Knight Riders
+    </header>
+    <h3>
+        <p>Kolkata Knight Riders (KKR) are a professional franchise cricket team representing the city of Kolkata in the
+            Indian Premier League. The franchise is owned by Bollywood actor Shah Rukh Khan, actress Juhi Chawla and her
+            spouse Jay Mehta. The Knight Riders play at the Eden Gardens stadium.</p>
+    </h3>
+    <div class="row">
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./kolkata/Rinku Singh bat.png" alt="player1">
+            <div class="content">
+                <h3>Rinku Singh</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 31</p>
+                    <p>Total Runs: 725</p>
+                    <p>Strike Rate : 142.16</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./kolkata/Nitish Rana bat.png" alt="player2">
+            <div class="content">
+                <h3>Nitish Rana</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 105</p>
+                    <p>Total Runs: 2594</p>
+                    <p>Strike Rate : 135.25</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./kolkata/Jason Roy bat.png" alt="player3">
+            <div class="content">
+                <h3>Jason Roy</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 21</p>
+                    <p>Total Runs: 614</p>
+                    <p>Strike Rate : 138.60</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./kolkata/Shreyas Iyer bat.png" alt="player4">
+            <div class="content">
+                <h3>Shreyas Iyer</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 101</p>
+                    <p>Total Runs: 2776</p>
+                    <p>Strike Rate : 125.38</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./kolkata/Venkatesh Iyer bat.png" alt="player5">
+            <div class="content">
+                <h3>Venkatesh Iyer</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 36	</p>
+                    <p>Total Runs: 956</p>
+                    <p>Strike Rate : 130.25</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./kolkata/Rahmanullah Gurbaz bat.png" alt="player6">
+            <div class="content">
+                <h3>Rahmanullah Gurbaz</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 11</p>
+                    <p>Total Runs: 227</p>
+                    <p>Strike Rate : 133.53</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="team-member bowler" tabindex="0">
+            <img src="./kolkata/Andre Russell all.png" alt="player7">
+            <div class="content">
+                <h3>Andre Russell</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 112</p>
+                    <p>Total Runs: 2262</p>
+                    <p>Strike Rate : 174.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./kolkata/Anukul Roy all.png" alt="player8">
+            <div class="content">
+                <h3>Anukul Roy</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 6</p>
+                    <p>Total Runs: 23</p>
+                    <p>Strike Rate : 109.52</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./kolkata/Sunil Narine bowl.png" alt="player9">
+            <div class="content">
+                <h3>Sunil Narine</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 162</p>
+                    <p>Total Wickets: 163</p>
+                    <p>Strike Rate : 6.73</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./kolkata/Harshit Rana bowl.png" alt="player10">
+            <div class="content">
+                <h3>Harshit Rana</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 8</p>
+                    <p>Total Wickets: 6</p>
+                    <p>Strike Rate : 9.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./kolkata/Suyash Sharma bowl.png" alt="player10">
+            <div class="content">
+                <h3>Suyash Sharma</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 11</p>
+                    <p>Total Wickets: 10</p>
+                    <p>Strike Rate : 8.23</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./kolkata/Vaibhav Arora bowl.png" alt="player11">
+            <div class="content">
+                <h3>Vaibhav Arora</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 10</p>
+                    <p>Total Wickets: 8</p>
+                    <p>Strike Rate: 9.16</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="./delhi/delhi-capitals.jpg">
+    <title>Delhi Capitals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004f94;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        .team-member {
+            flex: 1;
+            max-width: 150px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member:hover {
+            background-color: #16a085;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .team-member:hover .content,
+        .team-member:focus .content {
+            opacity: 1;
+        }
+
+        h3,
+        p {
+            margin: 0;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .batsman {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .bowler {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content1 {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .team-member:hover .content1 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">
+    <img src="delhi-capitals.jpg" style="float: left" width="100px" height="60px">
+    </a>
+    <header>
+        Delhi Capitals
+    </header>
+    <h3>
+        <p>Delhi Capitals are a professional franchise cricket team based in Delhi that plays in the Indian Premier
+            League. The franchise is jointly owned by the GMR Group and the JSW Sports. The team's home ground is Arun
+            Jaitley Stadium, located in New Delhi. The team is captained by David Warner and coached by Ricky Ponting
+        </p>
+    </h3>
+    <div class="row">
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./delhi/Rishabh-Pant.png" alt="player1">
+            <div class="content">
+                <h3>Rishabh Pant</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 98</p>
+                    <p>Total Runs: 2838</p>
+                    <p>Strike Rate : 147.97</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./delhi/David Warner batter.png" alt="player2">
+            <div class="content">
+                <h3>David Warner</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 176</p>
+                    <p>Total Runs: 6397</p>
+                    <p>Strike Rate : 139.92</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./delhi/Prithvi shaw batter.png" alt="player3">
+            <div class="content">
+                <h3>Prithvi Shaw</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 71</p>
+                    <p>Total Runs: 1694</p>
+                    <p>Strike Rate : 145.78</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./delhi/mitchell marsh batter.png" alt="player4">
+            <div class="content">
+                <h3>Mitchell Marsh/h3>
+                    <p>Batsman</p>
+                    <div class="content1">
+                        <p>Innings : 38</p>
+                        <p>Total Runs: 605</p>
+                        <p>Strike Rate : 125.26</p>
+                    </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./delhi/Abishek porel batter.png" alt="player5">
+            <div class="content">
+                <h3>Abishek Porel</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 4</p>
+                    <p>Total Runs: 33</p>
+                    <p>Strike Rate : 106.45</p>
+                </div>
+            </div>
+        </div>
+        <div class=" team-member batsman" tabindex="0">
+            <img src="./delhi/yash dhull batter.png" alt="player6">
+            <div class="content">
+                <h3>Yash Dhull</h3>
+                <p>Batsman</p>
+                <div class="content1">
+                    <p>Innings : 4</p>
+                    <p>Total Runs: 16</p>
+                    <p>Strike Rate : 69.57</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="team-member bowler" tabindex="0">
+            <img src="./delhi/Lalit yadav all.png" alt="player7">
+            <div class="content">
+                <h3>Lalit Yadav</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 25</p>
+                    <p>Total Runs: 295</p>
+                    <p>Strike Rate : 106.12</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./delhi/Axar Patel all raounder.png" alt="player8">
+            <div class="content">
+                <h3>Axar Patel</h3>
+                <p>All-Rounder</p>
+                <div class="content1">
+                    <p>Innings : 136</p>
+                    <p>Total Runs: 1418</p>
+                    <p>Strike Rate : 130.81</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./delhi/lungi ngidi.png" alt="player9">
+            <div class="content">
+                <h3>Lungi Ngidi</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 14</p>
+                    <p>Total Wickets: 25</p>
+                    <p>Strike Rate : 8.30</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./delhi/kuldeep yadav bowl.png" alt="player10">
+            <div class="content">
+                <h3>Kuldeep yadav</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 73</p>
+                    <p>Total Wickets: 71</p>
+                    <p>Strike Rate : 8.13</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./delhi/ishant sharma bowl.png" alt="player10">
+            <div class="content">
+                <h3>Ishant Sharma</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 101</p>
+                    <p>Total Wickets: 83</p>
+                    <p>Strike Rate : 8.11</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-member bowler" tabindex="0">
+            <img src="./delhi/mukesh kumar bowl.png" alt="player11">
+            <div class="content">
+                <h3>JMukesh Kumar</h3>
+                <p>Bowler</p>
+                <div class="content1">
+                    <p>Innings : 10</p>
+                    <p>Total Wickets: 7</p>
+                    <p>Strike Rate : 10.52</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
